@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 너비를 장치너비에 맞게 설정, 초기화면 배율=100%-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <!--가독성이 좋은 폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            /*폰트 통일*/
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        body {
+            background-image: url('login_background_image.png');
+        }
+        .signupForm {
+            position: absolute;
+            width: 400px;
+            height: 550px;
+            padding: 30px, 20px;
+            background-color: white;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 15px;
+        }
+        .signupForm h1 {
+            text-align: center;
+            margin: 20px;
+        }
+        .idForm, .pwForm, .nameForm, .phoneNumForm, .emailForm{
+            border-bottom: 2px solid gray;
+            margin: 30px;
+            padding: 10px 10px;
+        }
+        .id, .pw, .name, .pn, .email {
+            width: 100%;
+            border: none;
+            outline: none;
+            color: GrayText;
+            font-size: 16px;
+            height: 25px;
+            background: none;
+        }
+        .btn_signIn {
+            position: relative;
+            left: 25%;
+            transform: translateX(-50%);
+            margin-bottom: 40px;
+            width: 50%;
+            height: 40px;
+            background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec);
+            background-position: left;
+            background-size: 200%;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            display: inline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="" method="post" class="signupForm">
+        <h1>회원가입</h1>
+        <div class="idForm">
+            <input type="text" class="id" placeholder="id를 입력하세요" />
+        </div>
+        <div class="pwForm">
+            <input type="text" class="pw" placeholder="pw를 입력하세요" />
+        </div>
+        <div class="nameForm">
+            <input type="text" class="name" placeholder="이름을 입력하세요" />
+        </div>
+        <div class="phoneNumForm">
+            <input type="text" class="pn" placeholder="전화번호를 입력하세요(숫자로만)" />
+        </div>
+        <div class="emailForm">
+            <input type="email" class="email" placeholder="이메일을 입력하세요" />
+        </div>
+
+        <button type="button" class="btn_signIn" onclick=""> <!--회원가입하기 누르면 동작-->
+            SIGN UP
+        </button>
+
+    </form>
+
+
+</body>
+</html>

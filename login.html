@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 너비를 장치너비에 맞게 설정, 초기화면 배율=100%-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!--가독성이 좋은 폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
+
+
+    <style>
+        html {
+            /*폰트 통일*/
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        body {
+            background-image: url('login_background_image.png');
+        }
+        .loginForm {
+            position: absolute;
+            width: 300px;
+            height: 400px;
+            padding: 30px, 20px;
+            background-color: white;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 15px;
+        }
+
+        .loginForm h1 {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .idForm, .pwForm {
+            border-bottom: 2px solid gray;
+            margin: 30px;
+            padding: 10px 10px;
+        }
+
+        .id, .pw {
+            width: 100%;
+            border: none;
+            outline: none;
+            color: GrayText;
+            font-size: 16px;
+            height: 25px;
+            background: none;
+        }
+
+        .btn {
+            position: relative;
+            left: 40%;
+            transform: translateX(-50%);
+            margin-bottom: 40px;
+            width: 80%;
+            height: 40px;
+            background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec);
+            background-position: left;
+            background-size: 200%;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .bottomText {
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <form action="" method="post" class="loginForm"> <!--로그인 데이터가 도착할 url 입력!!-->
+        <h1>로그인</h1>
+        <div class="idForm">
+            <input type="text" class="id" placeholder="아이디">
+        </div>
+        <div class="pwForm">
+            <input type="password" class="pw" placeholder="패스워드">
+        </div>
+        <button type="button" class="btn" onclick="button()"> <!--로그인 버튼 누르면 메인화면, 파일명 입력 필요!!-->
+            LOG IN
+        </button>
+
+        <div class="bottomText">
+            아이디가 없으신가요? <a href="signup.html" >회원가입하기</a> <!--회원가입하기:링크-->
+        </div>
+    </form>
+</body>
+</html>
+
