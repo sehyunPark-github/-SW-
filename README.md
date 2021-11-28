@@ -1,2 +1,2 @@
-# -SW-
-파주학당 프로그램 예약 사이트_박세현 김현진 정민석
+# express-websw-project
+ 2-2 웹 sw 학기말 프로젝트 / node-express
