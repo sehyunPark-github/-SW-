@@ -1,0 +1,19 @@
+extends ./layouts/main
+
+block content
+    .main
+        // 로그인 데이터가 도착할 url 입력
+        form.loginForm(action='/login', method='post') 
+            br
+            h1 로그인
+            .loginIdForm
+                input.loginId(type='text', placeholder='아이디', name="username")
+            .loginPwForm
+                input.loginPw(type='password', placeholder='패스워드' name="password")
+            // 회원가입페이지 이동
+            .bottomText
+                | 아이디가 없으신가요?    
+                a.signupLink(href='/signup') 회원가입하기    
+        // 로그인 버튼 누르면 메인화면 이동
+        button.loginBtn(type='submit') LOGIN
+            
