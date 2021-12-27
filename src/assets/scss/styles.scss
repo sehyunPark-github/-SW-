@@ -1,7 +1,14 @@
 @import 'config/reset.scss';
+@import 'config/_variables.scss';
 
 @import 'main.scss';
+
 @import 'pages/home.scss';
 @import 'pages/programUpload.scss';
 @import 'pages/login.scss';
 @import 'pages/signup.scss';
+@import 'pages/programDetail.scss';
+@import 'pages/programList.scss';
+@import 'pages/adminDash.scss';
+
+@import 'partials/message.scss';
