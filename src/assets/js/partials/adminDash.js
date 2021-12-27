@@ -1,4 +1,6 @@
-/*[
+const reservationsInputHidden = document.getElementById("reservationsData")
+if(reservationsInputHidden){
+    const reservationData=[
     {
         "_id": "61aea62942216cb213c78ee4",
         "name": "1111hj",
@@ -140,11 +142,6 @@
         "__v": 0
     }
 ]
-*/
-
-const reservationsInputHidden = document.getElementById("reservationsData")
-if(reservationsInputHidden){
-    const reservationData=JSON.parse(reservationsInputHidden.value)
     console.log("reservationData : ",reservationData)
     
     const body = document.querySelector('.main'); //전체 바디
@@ -160,14 +157,7 @@ if(reservationsInputHidden){
             
             const reservationInfo = document.createElement('div');
             reservationInfo.classList.add('reservationInfo');
-            reservationInfo.innerHTML = "성함: " + obj[key].name;
-            reservationInfo.innerHTML = "프로그램명: " + obj[key].program;
-            reservationInfo.innerHTML = "이메일: " + obj[key].email;
-            reservationInfo.innerHTML = "아이디: " + obj[key]._id;
-            reservationInfo.innerHTML = "전화번호: " + obj[key].phoneNumber;
-            reservationInfo.innerHTML = "인원수: " + obj[key]._id;
-            reservationInfo.innerHTML = "문의사항: " + obj[key].message;
-            
+            reservationInfo.innerHTML = "성함: "+obj[key].name+"<br/>"+ "프로그램명: " + obj[key].program + "<br/>" + "이메일: " + obj[key].email + "<br/>" + "아이디: " + obj[key]._id + "<br/>" +  "전화번호: " + obj[key].phoneNumber + "<br/>" + "인원수: " + obj[key].peopleNum + "<br/>"+ "문의사항: " + obj[key].message;
            
             reservation.appendChild(reservationInfo);
             reservationListContainer.appendChild(reservation);
